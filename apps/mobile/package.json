@@ -15,10 +15,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "export PORT=3001 && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "export PORT=3001 && craco start --verbose",
+    "build": "craco build",
+    "test": "craco test"
   },
   "eslintConfig": {
     "extends": [

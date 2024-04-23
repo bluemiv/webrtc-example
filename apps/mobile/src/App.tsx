@@ -1,8 +1,12 @@
 import React from 'react';
-import './App.css';
+import { VideoChat } from '@/components';
 
 function App() {
-  return <div>Mobile Project</div>;
+  return (
+    <div>
+      <VideoChat />
+    </div>
+  );
 }
 
 export default App;
