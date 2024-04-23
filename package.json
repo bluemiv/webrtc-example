@@ -1,0 +1,26 @@
+{
+  "name": "webrtc-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bluemiv/webrtc-example.git",
+  "author": "taehongkim <public.bluemiv@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/**/*",
+    "packages/**/*"
+  ],
+  "scripts": {
+    "web": "yarn workspace @webrtc-example/web",
+    "mobile": "yarn workspace @webrtc-example/mobile"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.0",
+    "dayjs": "^1.11.10",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "prettier": "^3.2.5"
+  }
+}
