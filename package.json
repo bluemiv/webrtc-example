@@ -11,9 +11,10 @@
     "packages/**/*"
   ],
   "scripts": {
-    "start": "yarn concurrently \"yarn web start\" \"yarn mobile start\"",
+    "start": "yarn concurrently \"yarn web start\" \"yarn mobile start\" \"yarn msg start\"",
     "web": "yarn workspace @webrtc-example/web",
-    "mobile": "yarn workspace @webrtc-example/mobile"
+    "mobile": "yarn workspace @webrtc-example/mobile",
+    "msg": "yarn workspace @webrtc-example/msg-server"
   },
   "dependencies": {
     "@types/lodash": "^4.17.0",
