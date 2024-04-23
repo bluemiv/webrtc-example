@@ -1,0 +1,15 @@
+version: '3'
+services:
+  coturn:
+    image: coturn/coturn:4.6
+    restart: always
+    ports:
+      - 3478:3478
+      - 3478:3478/udp
+      - 5349:5349
+      - 5349:5349/udp
+    volumes:
+      - ./coturn/turnserver.conf:/etc/coturn/turnserver.conf
+      - ./coturn/tmp/:/var/tmp/
+#      - ./coturn/privkey.pem:/etc/ssl/private/privkey.pem:ro
+#      - ./coturn/cert.pem:/etc/ssl/certs/cert.pem:ro
