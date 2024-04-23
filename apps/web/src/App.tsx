@@ -1,7 +1,12 @@
 import React from 'react';
+import { VideoChat } from '@/components';
 
 function App() {
-  return <div>WEB Project</div>;
+  return (
+    <div>
+      <VideoChat />
+    </div>
+  );
 }
 
 export default App;

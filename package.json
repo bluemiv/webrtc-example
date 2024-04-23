@@ -11,24 +11,18 @@
     "packages/**/*"
   ],
   "scripts": {
-    "start": "yarn concurrently \"yarn web start\" \"yarn mobile start\" \"yarn msg start\"",
+    "start": "yarn concurrently \"yarn web start\" \"yarn msg start\"",
     "web": "yarn workspace @webrtc-example/web",
-    "mobile": "yarn workspace @webrtc-example/mobile",
     "msg": "yarn workspace @webrtc-example/msg-server"
   },
   "dependencies": {
     "@types/lodash": "^4.17.0",
     "@types/node": "^16.18.96",
-    "dayjs": "^1.11.10",
     "lodash": "^4.17.21",
     "socket.io": "^4.7.5",
-    "socket.io-client": "^4.7.5",
     "typescript": "^4.9.5"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@craco/craco": "^7.1.0",
-    "@craco/types": "^7.1.0",
     "concurrently": "^8.2.2",
     "prettier": "^3.2.5"
   }
